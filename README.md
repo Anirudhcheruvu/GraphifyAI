@@ -23,15 +23,17 @@ This extension offers two primary modes of operation: Audio Mode and Visualizati
 - The Chrome extension captures the audio, processes it, and sends it to the backend server.
 - The backend interacts with Gemini and receives a tool call request if the query is database-related.
 - The server executes the tool call:
-  - It queries a small internal database.
-  - It generates a Python script to visualize the data.
+  - Makes an API call to Gemini to get a **database query** and a **python script** to visualize the data as per the user query.
+  - Queries an internal database using the database query.
+  - Runs the Python script to visualize the data, i.e generate the graph image.
   - The resulting graph image is sent back to the user.
 
 ### 2. Visualization Mode (Table to Graph Conversion)
 - The user enables visualization mode and clicks the "Generate Graph" button.
 - The extension captures the table as an image.
 - The backend sends the image to Gemini, which converts it into CSV format.
-- A new tool call is generated to convert the CSV into a graph using Python.
+- A new API call is made to Gemini to generated the Python script to convert the CSV into a graph.
+- The python script is executed to generate the graph.
 - The processed graph is sent back to the user for display.
 
 ## Project Structure
