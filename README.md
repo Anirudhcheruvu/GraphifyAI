@@ -14,7 +14,7 @@ This project is a Chrome extension that enables users to interact with Google's 
 - **Automated graph generation from tables**
 - **Seamless Chrome extension integration**
 
-![GraphifyAI_sequence_diagram](https://github.com/user-attachments/assets/02fdbd0a-2402-4cf8-8154-511d6180fc21)
+![image](https://github.com/user-attachments/assets/7513dcc5-b907-4339-ad68-b95b4b7ff81b)
 
 ## How It Works
 
@@ -38,7 +38,8 @@ This extension offers two primary modes of operation: Audio Mode and Visualizati
 - The processed graph is sent back to the user for display.
 
 ## Project Structure
-![image](https://github.com/user-attachments/assets/7513dcc5-b907-4339-ad68-b95b4b7ff81b)
+![GraphifyAI_sequence_diagram](https://github.com/user-attachments/assets/02fdbd0a-2402-4cf8-8154-511d6180fc21)
+
 
 ### **Client-Side (Chrome Extension)**
 - `manifest.json`: Defines permissions, content scripts, and background processes.
