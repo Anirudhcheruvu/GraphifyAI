@@ -7,6 +7,8 @@ This project is a Chrome extension that enables users to interact with Google's 
 
 1. **Audio Mode:** Users can interact with Gemini via voice commands. When users request a database-related query, the Gemini API generates a tool call that executes on the server, retrieves relevant data, and generates a graph using Python.
 2. **Visualization Mode:** Users can capture tables displayed on their screen, convert them into structured data (CSV), and generate visualizations.
+3. 
+![GraphifyAI_sequence_diagram](https://github.com/user-attachments/assets/02fdbd0a-2402-4cf8-8154-511d6180fc21)
 
 ## Features
 - **Real-time interaction with Gemini**
