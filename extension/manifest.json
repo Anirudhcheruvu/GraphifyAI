@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "GraphifyAI",
+    "version": "1.0",
+    "description": "Screen sharing and audio recording extension.",
+    "permissions": [
+      "desktopCapture",
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabCapture",
+      "tabs",
+      "screenCapture"
+    ],
+    "host_permissions": [
+      "http://localhost:9083/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "action": {},
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "pcm-input-processor.js",
+          "pcm-output-processor.js",
+          "clientScript.js.map"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

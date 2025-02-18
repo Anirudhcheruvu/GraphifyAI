@@ -1,0 +1,35 @@
+{
+    "stream_interval": 2000, 
+    "output_sample_rate": 24000, 
+    "input_sample_rate": 16000, 
+    "outputMode": "AUDIO", 
+    "model": "gemini-2.0-flash-exp", 
+    "generation_config": {
+        "temperature": 0.0,
+        "top_p": 0.0,
+        "response_modalities": "AUDIO"
+    },
+    "tools": [
+        {
+        "function_declarations": [
+            {
+                "name": "process_graph_from_audio_tool",
+                "description": "A function that generated queries to query on database to get graph or data if a user makes a query about graph or any data point related to products, orders or customers.",
+                "parameters": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "query": {
+                            "type": "STRING",
+                            "description": "The user query for retrieving data from database."
+                        }
+                    },
+                    "required": ["query"]
+                }
+            }
+        ]
+        }
+    ],
+    "apiHost": "http://localhost:8080/process-image",
+    "wsHost": "ws://localhost:8080/ws"
+}
+
