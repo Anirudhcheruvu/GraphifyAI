@@ -38,9 +38,6 @@ This extension offers two primary modes of operation: Audio Mode and Visualizati
 - The processed graph is sent back to the user for display.
 
 ## Project Structure
-![GraphifyAI_sequence_diagram](https://github.com/user-attachments/assets/02fdbd0a-2402-4cf8-8154-511d6180fc21)
-
-
 ### **Client-Side (Chrome Extension)**
 - `manifest.json`: Defines permissions, content scripts, and background processes.
 - `background.js`: Handles background tasks like extension installation and message passing.
@@ -56,6 +53,9 @@ This extension offers two primary modes of operation: Audio Mode and Visualizati
 - `database.py`: Contains sample database tables.
 - `toolcall.py`: Handles tool calls from Gemini.
 - `prompts.py`: Defines system prompts used for Gemini interactions.
+
+## Sequence Diagram
+![GraphifyAI_sequence_diagram](https://github.com/user-attachments/assets/02fdbd0a-2402-4cf8-8154-511d6180fc21)
 
 ## Installation & Setup
 
