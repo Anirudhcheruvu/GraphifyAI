@@ -67,16 +67,12 @@ This extension offers two primary modes of operation: Audio Mode and Visualizati
 5. The extension should now be available in your browser.
 
 ### **2. Running the Server**
-1. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-2. Set up environment variables (e.g., `GOOGLE_API_KEY` for Gemini access).
-3. Start the FastAPI server:
+1. Set up environment variables (e.g., `GOOGLE_API_KEY` for Gemini access).
+2. Start the FastAPI server:
    ```sh
    python main.py
    ```
-4. The server will be available at `http://localhost:8080`.
+3. The server will be available at `http://localhost:8080`.
 
 ## Usage Guide
 1. Click on the extension icon to open the UI.
